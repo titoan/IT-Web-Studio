@@ -1,4 +1,90 @@
-.conatiner {
-  width: 100%;
-  color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content-container {
+  padding: 0 200px;
+}
+
+.row {
+  display: flex;
+}
+
+.ai_center {
+  align-items: center;
+}
+
+.jc_space-between {
+  justify-content: space-between;
+}
+
+.header {
+  margin-top: 13px;
+  padding-bottom: 30px;
+  max-width: 740px;
+  border-bottom: 1px solid #F3A917;
+  margin-bottom: 160px;
+}
+
+.ico_twitter {
+  background-image: url(../img/ico-twitter_21x17_white.svg);
+  width: 21px;
+  height: 17px;
+  background-repeat: no-repeat;
+}
+.ico_twitch {
+  background-image: url(../img/ico-twitch_18x19_white.svg);
+  width: 18px;
+  height: 19px;
+  background-repeat: no-repeat;
+}
+.ico_fb {
+  background-image: url(../img/ico-fb_11x10_white.svg);
+  width: 11px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+.ico_vk {
+  background-image: url(../img/ico-vk_25x15_white.svg);
+  width: 25px;
+  height: 15px;
+  background-repeat: no-repeat;
+}
+
+.social .item {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.social .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.main-slider__logo {
+  background-image: url(../img/slider-logo.svg);
+  width: 192px;
+  height: 60px;
+  background-repeat: no-repeat;
+  margin-bottom: 35px;
+}
+.main-slider__title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 73px;
+  color: #FFFFFF;
+  padding: 35px 0 25px 0;
+}
+.main-slider__text {
+  color: #fff;
+  max-width: 703px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  font-weight: normal;
 }

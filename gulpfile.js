@@ -22,13 +22,6 @@ gulp.task('html', async function(){
     .pipe(gulp.dest('public/'))
 })
 
-gulp.task('imagemin', async function(){
-    return gulp.src('src/img/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('public/img'))
-});
-
-
 gulp.task('watch', function(){
     gulp.watch('src/sass/**/*.scss', gulp.parallel('sass'));   
     gulp.watch('src/js/*.js', gulp.parallel('js'));
