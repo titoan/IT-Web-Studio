@@ -6,6 +6,10 @@ body{
     font-family: 'Montserrat',sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .content-container{
     padding: 0 200px;
 }
@@ -22,8 +26,7 @@ body{
     justify-content: space-between;
 }
 
-.header{
-    margin-top: 13px;
+.header{    
     padding-bottom: 30px;
     max-width: 740px;
     border-bottom: 1px solid #F3A917;
@@ -75,6 +78,12 @@ body{
 }
 
 .main-slider{
+    padding-top: 13px;
+    margin-bottom: 140px;
+    padding-bottom: 197px;
+    background-image: url(../img/main-slider-bg_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     &__logo{
         background-image: url(../img/slider-logo.svg);
         width: 192px;
@@ -97,5 +106,88 @@ body{
         line-height: 22px;
         letter-spacing: 0.01em;
         font-weight: normal;
+    }
+
+    &__buttons {
+        margin-top: 220px;
+        .btn{
+            width: 246px;
+            padding: 13.5px 0;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .row>*:not(:last-child){
+            margin-right: 35px;
+        }
+    }
+   
+}
+
+
+.btn_yeallow{
+    background: #F3A917;
+    color: #000;
+}
+
+.btn_default{
+    color: #FFFFFF;
+    border: 2px solid #F3A917;
+}
+
+.title{font-size: 32px;}
+
+.schedule{
+    .title{
+        color: #fff;
+        margin-bottom: 40px;
+    }
+}
+
+.cards{
+    margin-top: 100px;
+}
+
+.card{
+    width: 350px;
+    height: 341px;
+    background: #292A2F;
+    border-radius: 10px;
+
+    &__header{
+        padding: 40px 30px 19px 30px;
+        color: #fff;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            bottom: 0;
+            content: ' ';
+            width: 278px;
+            height: 1px;
+            background-color: #F3A917;
+        }
+    }
+
+    .game_name{
+        font-size: 14px;
+    }
+
+    .game_date{
+        text-align: center;
+        .item{
+            &:first-child{
+                font-size: 12px;
+            }
+
+            &:last-child{
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+        }
     }
 }
