@@ -136,6 +136,7 @@ a {
 
 .cards {
   margin-top: 100px;
+  margin-bottom: 306px;
 }
 
 .card {
@@ -148,6 +149,7 @@ a {
   padding: 40px 30px 19px 30px;
   color: #fff;
   position: relative;
+  margin-bottom: 36px;
 }
 .card__header::before {
   position: absolute;
@@ -157,16 +159,60 @@ a {
   height: 1px;
   background-color: #F3A917;
 }
-.card .game_name {
+.card .game-name {
   font-size: 14px;
 }
-.card .game_date {
+.card .game-date {
   text-align: center;
+  padding-right: 18px;
 }
-.card .game_date .item:first-child {
+.card .game-date .item:first-child {
   font-size: 12px;
 }
-.card .game_date .item:last-child {
+.card .game-date .item:last-child {
   font-weight: bold;
   font-size: 20px;
+}
+
+.card__body {
+  padding: 0 37px;
+}
+
+.team-logo {
+  margin-bottom: 15px;
+}
+.team-logo .item {
+  width: 50px;
+  height: 50px;
+}
+.team-logo .item:first-child {
+  margin-right: 20px;
+}
+
+.coefficient {
+  margin-bottom: 15px;
+}
+.coefficient__name {
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.coefficient__val {
+  width: 58px;
+  height: 30px;
+  border: 1px solid #F3A917;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+}
+.coefficient .row:first-child {
+  margin-bottom: 15px;
+}
+
+.card__time-info .item:first-child {
+  font-size: 12px;
+  color: #757C84;
 }
