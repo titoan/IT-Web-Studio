@@ -138,12 +138,25 @@ a {
   margin-top: 100px;
   margin-bottom: 306px;
 }
+.cards .owl-carousel .owl-stage-outer {
+  padding: 15px 0;
+}
 
 .card {
   width: 350px;
   height: 341px;
   background: #292A2F;
   border-radius: 10px;
+  position: relative;
+  transition: 0.4s;
+}
+.card:hover {
+  box-shadow: 0px 6px 13px -3px #F3A917;
+  transition: 0.2s;
+}
+.card:hover .card__hover {
+  opacity: 1;
+  transition: 0.5s;
 }
 .card__header {
   padding: 40px 30px 19px 30px;
@@ -173,31 +186,28 @@ a {
   font-weight: bold;
   font-size: 20px;
 }
-
 .card__body {
   padding: 0 37px;
 }
-
-.team-logo {
+.card .team-logo {
   margin-bottom: 15px;
 }
-.team-logo .item {
+.card .team-logo .item {
   width: 50px;
   height: 50px;
 }
-.team-logo .item:first-child {
+.card .team-logo .item:first-child {
   margin-right: 20px;
 }
-
-.coefficient {
+.card .coefficient {
   margin-bottom: 15px;
 }
-.coefficient__name {
+.card .coefficient__name {
   font-weight: bold;
   font-size: 20px;
   color: #FFFFFF;
 }
-.coefficient__val {
+.card .coefficient__val {
   width: 58px;
   height: 30px;
   border: 1px solid #F3A917;
@@ -208,11 +218,47 @@ a {
   font-size: 14px;
   color: #fff;
 }
-.coefficient .row:first-child {
+.card .coefficient .row:first-child {
   margin-bottom: 15px;
 }
-
 .card__time-info .item:first-child {
   font-size: 12px;
   color: #757C84;
+}
+.card__hover {
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 341px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(7, 7, 7, 0.76);
+  border-radius: 10px;
+  transition: opacity 0.5s;
+}
+.card__hover__btn {
+  padding: 11.5px 20px;
+  text-transform: uppercase;
+  background: #F3A917;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.card__hover__btn .row > *:not(:last-child) {
+  margin-right: 10px;
+}
+.card__hover .play-ico {
+  display: inline-block;
+  width: 14px;
+  height: 17px;
+  background-image: url(../img/play-ico.svg);
+}
+
+.owl-item {
+  display: flex;
+  justify-content: center;
 }
