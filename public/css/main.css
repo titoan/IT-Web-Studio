@@ -133,10 +133,28 @@ a {
   color: #fff;
   margin-bottom: 40px;
 }
+.schedule .schedule-tabs {
+  border-top: 1px solid #F3A917;
+}
+.schedule .schedule-tabs a {
+  display: inline-block;
+  width: 152px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #F3A917;
+  padding: 15px 0;
+  text-align: center;
+}
+.schedule .schedule-tabs a.active {
+  background-color: #F3A917;
+  border: none;
+}
 
 .cards {
   margin-top: 100px;
   margin-bottom: 306px;
+  padding: 0 185px;
 }
 .cards .owl-carousel .owl-stage-outer {
   padding: 15px 0;

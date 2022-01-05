@@ -53,6 +53,13 @@
         <div class="content-container">
             <h2 class="title">Расписание и результаты</h2>
 
+            <div class="schedule-tabs">
+                <div class="row">
+                    <a href="" class="active">Matches</a>
+                    <a href="">Battles</a>
+                </div>
+            </div>
+        </div>        
             <div class="cards">
                 <div class="container">
                     <div class="owl-carousel owl-theme">
@@ -118,7 +125,7 @@
                 </div>
 
             </div>
-        </div>
+        
     </section>
 
 
@@ -129,7 +136,7 @@
 
     <script>
         let parentItem = $('.cards > .container > .owl-carousel');
-        for(let i = 2; i >= 0; i--){
+        for(let i = 6; i >= 0; i--){
             $('.card:first-child').clone().appendTo(parentItem);
         }
         
