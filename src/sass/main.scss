@@ -233,7 +233,7 @@ a{
         padding: 0 37px;
     }
 
-    .team-logo{
+    .card-logo{
         margin-bottom: 15px;
         .item{
             width: 50px;
@@ -309,6 +309,23 @@ a{
             width: 14px;
             height: 17px;
             background-image: url(../img/play-ico.svg);
+        }
+    }
+
+    &__battles{
+        .card__header{
+            padding: 47px 35px 19px 35px;
+        }
+
+        .coefficient__val{
+            width: auto;
+            height: auto;
+            padding: 5px 10px;
+            text-transform: uppercase;
+        }
+
+        .card-logo{
+            margin-bottom: 22px;
         }
     }
 

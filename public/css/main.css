@@ -207,14 +207,14 @@ a {
 .card__body {
   padding: 0 37px;
 }
-.card .team-logo {
+.card .card-logo {
   margin-bottom: 15px;
 }
-.card .team-logo .item {
+.card .card-logo .item {
   width: 50px;
   height: 50px;
 }
-.card .team-logo .item:first-child {
+.card .card-logo .item:first-child {
   margin-right: 20px;
 }
 .card .coefficient {
@@ -274,6 +274,18 @@ a {
   width: 14px;
   height: 17px;
   background-image: url(../img/play-ico.svg);
+}
+.card__battles .card__header {
+  padding: 47px 35px 19px 35px;
+}
+.card__battles .coefficient__val {
+  width: auto;
+  height: auto;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+.card__battles .card-logo {
+  margin-bottom: 22px;
 }
 
 .owl-item {
