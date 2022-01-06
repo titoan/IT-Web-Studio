@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 .content-container {
   padding: 0 200px;
 }
@@ -19,6 +23,10 @@ a {
 
 .ai_center {
   align-items: center;
+}
+
+.jc_center {
+  justify-content: center;
 }
 
 .jc_space-between {
@@ -119,10 +127,23 @@ a {
   background: #F3A917;
   color: #000;
 }
-
 .btn_default {
   color: #FFFFFF;
   border: 2px solid #F3A917;
+}
+.btn_reg {
+  padding: 17.5px 60px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+  border-radius: 5px;
+}
+.btn_reg .ico {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/reg-btn-ico_24x24.svg);
+  margin-right: 10px;
 }
 
 .title {
@@ -153,8 +174,7 @@ a {
 
 .cards {
   margin-top: 100px;
-  margin-bottom: 306px;
-  padding: 0 185px;
+  padding: 0 185px 285px 185px;
 }
 .cards .owl-carousel .owl-stage-outer {
   padding: 15px 0;
@@ -286,6 +306,77 @@ a {
 }
 .card__battles .card-logo {
   margin-bottom: 22px;
+}
+
+.stages {
+  background-color: #F3A917;
+  padding: 117px 0;
+}
+.stages__title {
+  font-weight: bold;
+  font-size: 32px;
+  color: #000000;
+}
+.stages__text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  max-width: 608px;
+}
+.stages__text a {
+  color: #fff;
+}
+.stages__steps .row:first-child {
+  margin-bottom: 70px;
+}
+.stages__steps .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 221px;
+  position: relative;
+}
+.stages__steps .item:not(:last-child) {
+  margin-right: 71px;
+}
+.stages__steps .item:not(:last-child) .ico::after {
+  position: absolute;
+  content: " ";
+  width: 76px;
+  height: 4px;
+  background-color: #fff;
+  right: 0;
+  right: -146px;
+  top: 50%;
+}
+.stages__steps .item:nth-child(1) .ico {
+  background-image: url(../img/stages-ico__1_80x80.svg);
+}
+.stages__steps .item:nth-child(2) .ico {
+  background-image: url(../img/stages-ico__2_80x80.svg);
+}
+.stages__steps .item:nth-child(3) .ico {
+  background-image: url(../img/stages-ico__3_80x80.svg);
+}
+.stages__steps .item:first-child .title {
+  font-weight: bold;
+}
+.stages__steps .item .title {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.stages__steps .item .ico {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 33px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.stages .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .owl-item {

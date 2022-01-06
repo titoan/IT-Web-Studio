@@ -10,6 +10,10 @@ a{
     text-decoration: none;
 }
 
+p{
+    margin: 0;
+}
+
 .content-container{
     padding: 0 200px;
 }
@@ -20,6 +24,10 @@ a{
 
 .ai_center{
     align-items: center;
+}
+
+.jc_center{
+    justify-content: center;
 }
 
 .jc_space-between{
@@ -128,14 +136,32 @@ a{
 }
 
 
-.btn_yeallow{
-    background: #F3A917;
-    color: #000;
-}
+.btn{
+    &_yeallow{
+        background: #F3A917;
+        color: #000;
+    }
 
-.btn_default{
-    color: #FFFFFF;
-    border: 2px solid #F3A917;
+    &_default{
+        color: #FFFFFF;
+        border: 2px solid #F3A917;
+    }
+
+    &_reg{
+        padding: 17.5px 60px;
+        background-color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        color: #000;
+        border-radius: 5px;
+        .ico{
+            width: 24px;
+            height: 24px;
+            background-image: url(../img/reg-btn-ico_24x24.svg);
+            margin-right: 10px;
+           
+        }
+    }
 }
 
 .title{font-size: 32px;}
@@ -167,9 +193,8 @@ a{
 }
 
 .cards{
-    margin-top: 100px;
-    margin-bottom: 306px;
-    padding: 0 185px;
+    margin-top: 100px;    
+    padding: 0 185px 285px 185px;
 
     .owl-carousel .owl-stage-outer{
         padding: 15px 0;
@@ -331,8 +356,93 @@ a{
 
 }
 
+.stages{
+    background-color: #F3A917;
+    padding: 117px 0;
+    &__title{
+        font-weight: bold;
+        font-size: 32px;
+        color: #000000;
+    }
+
+    &__text{
+        font-size: 18px;
+        line-height: 30px;
+        color: #000;
+        max-width: 608px;
+
+        a{
+            color:#fff;
+        }
+    }
+
+    &__steps{
+
+        .row:first-child{
+            margin-bottom: 70px;
+        }
+        
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 221px;
+            position: relative;
+            &:not(:last-child){
+                margin-right: 71px;
+            }
+            &:not(:last-child) .ico::after{
+                position: absolute;
+                content: ' ';
+                width: 76px;
+                height: 4px;
+                background-color: #fff;
+                right: 0;
+                right: -146px;
+                top: 50%;
+            }
+            &:nth-child(1) .ico{
+                background-image: url(../img/stages-ico__1_80x80.svg);
+            }
+
+            &:nth-child(2) .ico{
+                background-image: url(../img/stages-ico__2_80x80.svg);
+            }
+
+            &:nth-child(3) .ico{
+                background-image: url(../img/stages-ico__3_80x80.svg);
+            }
+
+            &:first-child .title{
+                font-weight: bold;
+            }
+
+            .title{
+                margin-bottom: 5px;
+                font-size: 16px;
+                
+            }
+        }
+
+        .item .ico{
+            width: 80px;
+            height: 80px;
+            margin-bottom: 33px;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+    }
+
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 .owl-item{
     display: flex;
     justify-content: center;
 }
+
