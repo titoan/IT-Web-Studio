@@ -33,6 +33,10 @@ p {
   justify-content: space-between;
 }
 
+.fd_column {
+  flex-direction: column;
+}
+
 .header {
   padding-bottom: 30px;
   max-width: 740px;
@@ -138,6 +142,12 @@ p {
   font-size: 16px;
   color: #000;
   border-radius: 5px;
+  transition: 0.5s;
+}
+.btn_reg:hover {
+  background-color: #292A2F;
+  color: #fff;
+  transition: 0.5s;
 }
 .btn_reg .ico {
   width: 24px;
@@ -178,6 +188,12 @@ p {
 }
 .cards .owl-carousel .owl-stage-outer {
   padding: 15px 0;
+}
+.cards .tab-container {
+  display: none;
+}
+.cards .tab-container.active {
+  display: block;
 }
 
 .card {
@@ -379,7 +395,111 @@ p {
   justify-content: center;
 }
 
+footer {
+  position: relative;
+}
+footer img {
+  width: 100%;
+}
+footer .content-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
 .owl-item {
   display: flex;
   justify-content: center;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+}
+.footer__title {
+  font-weight: bold;
+  font-size: 32px;
+  color: #fff;
+}
+
+thead {
+  background-color: #F3A917;
+}
+
+th:first-child, td:first-child {
+  width: 72px;
+  text-align: center;
+  font-weight: normal;
+}
+
+th:last-child, td:last-child {
+  text-align: left;
+  font-weight: normal;
+  padding-left: 20px;
+}
+
+.table {
+  margin-bottom: 89px;
+}
+
+table {
+  border: 1px solid #F3A917;
+  border-bottom: none;
+  margin-bottom: 56px;
+  font-size: 20px;
+}
+
+table tr {
+  height: 55px;
+}
+
+tbody tr {
+  background-color: #292A2F;
+  color: #fff;
+}
+
+tbody td:not(:last-child) {
+  border-bottom: 1px solid #F3A917;
+}
+
+tbody td {
+  border-bottom: 1px solid #F3A917;
+}
+
+tbody td:first-child {
+  border-right: 1px solid #F3A917;
+}
+
+tbody td .ico {
+  width: 24px;
+  height: 18px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.ua-flag {
+  background-image: url(../img/ua-flag-ico_24x18.svg);
+}
+
+.footer__menu a {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer__menu a:not(:last-child) {
+  margin-right: 126px;
+}
+
+.timer {
+  margin-bottom: 20px;
+}
+.timer p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
 }

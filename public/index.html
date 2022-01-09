@@ -15,7 +15,7 @@
     <section class="main-slider">
         <div class="content-container">
             <header class="header">
-                <div class="row jc_space-between ai_center">
+                <div class="row jc_space-between ai_center"> 
                     <div class="col">
                         <div class="logo">
                             <img src="img/logo.svg" alt="">
@@ -55,15 +55,15 @@
 
             <div class="schedule-tabs">
                 <div class="row">
-                    <a href="" class="active">Matches</a>
-                    <a href="">Battles</a>
+                    <a class="item active" href="#tab_1">Matches</a>
+                    <a class="item" href="#tab_2">Battles</a>
                 </div>
             </div>
         </div>
         <div class="cards">
-            <div class="tab-container">
-                <!-- <div class="owl-carousel owl-theme">
-                    <div class="card" style="width:350px">
+            <div class="tab-container active" id="tab_1" >
+                 <div class="owl-carousel owl-theme ">
+                    <div class="card card__matches" style="width:350px">
                         <div class="card__header">
                             <div class="row jc_space-between ai_center">
                                 <div class="col">
@@ -121,8 +121,11 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
-                <div class="owl-carousel owl-theme">
+                </div> 
+            </div>
+
+            <div class="tab-container" id="tab_2" >
+                <div class="owl-carousel owl-theme" >
                     <div class="card card__battles">
                         <div class="card__header">
                             <div class="row jc_space-between ai_center">
@@ -174,8 +177,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
+            
         </div>
 
         </div>
@@ -213,7 +217,7 @@
                         <div class="row jc_center">
                             <a href="" class="btn btn_reg">
                                 <span class="ico"></span>
-                                <span>Вы зарегистрироаны </span>
+                                <span>Вы зарегистрированы </span>
                                 
                             </a>
                         </div>
@@ -224,6 +228,55 @@
 
     </section>
 
+    <footer class="footer">
+        <img src="img/footer-img.jpg" alt="">
+        <div class="content-container">
+            <div class="footer__content">
+                <div class="row fd_column ai_center">
+                    <p class="footer__title">Зарегистрировано: 24</p>
+                    <div class="timer" id="timer">
+                        <p>Осталось: <span class="min" id="min">15</span>мин <span class="sec" id="sec">30сек</span></p>
+                    </div>
+                    <div class="table">                    
+                        <table cellpadding="0" cellspacing="0" width="652px">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Team</th>
+                                </tr>
+                            </thead>
+     
+                            <tbody>
+                                <tr>
+                                    <td>353</td>
+                                    <td>
+                                        <div class="row">
+                                         <span class="ico ua-flag"></span>
+                                         <span>Dianne Russel</span>
+                                        </div>                                  
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+    
+                        <div class="footer__menu">
+                            <div class="row jc_center">
+                                <a href="">SUPPORT</a>
+                                <a href="">RULES</a>
+                                <a href="">FAQ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   
+
+            </div>
+
+
+
+        </div>
+    </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
@@ -232,9 +285,15 @@
     <script src="js/main.js"></script>
 
     <script>
-        mainFunctions.createCards();
+        mainFunctions.cloneItem('.cards > #tab_1 > .owl-carousel', '.card.card__matches:first-child', 6);
+        mainFunctions.cloneItem('.cards > .tab-container#tab_2 > .owl-carousel', '.card.card__battles:first-child', 6);
+        mainFunctions.cloneItem('tbody', 'tbody tr:first-child', 8);
         mainFunctions.startOwlCarousel();
+        mainFunctions.tabs();
+        
+       
     </script>
+
 
 </body>
 
